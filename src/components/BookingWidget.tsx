@@ -16,49 +16,50 @@ export default function BookingWidget() {
   };
 
   return (
-    <div className="bg-[var(--primary)] bg-opacity-95 text-white p-6 md:p-8 rounded-lg shadow-2xl max-w-sm w-full backdrop-blur-sm">
-      <p className="text-center text-lg mb-1">FROM</p>
-      <p className="text-center text-5xl font-bold mb-1">
-        <span className="text-[var(--gold)]">$149</span>
+    <div className="bg-white border border-gray-100 text-gray-900 p-6 md:p-8 rounded-2xl shadow-lg max-w-sm w-full">
+      <p className="text-center text-sm text-gray-400 mb-1">FROM</p>
+      <p className="text-center text-4xl font-bold mb-1">
+        <span className="text-gray-900">$149</span>
       </p>
-      <p className="text-center text-lg mb-6">PER NIGHT</p>
+      <p className="text-center text-sm text-gray-400 mb-6">PER NIGHT</p>
 
-      <div className="grid grid-cols-2 gap-4 mb-6">
+      <div className="grid grid-cols-2 gap-3 mb-5">
         <div>
-          <label className="block text-xs font-semibold uppercase tracking-wider mb-2">
-            Arrival
+          <label className="block text-xs font-medium text-gray-500 mb-1.5">
+            Check-in
           </label>
           <input
             type="date"
             value={checkIn}
             onChange={(e) => setCheckIn(e.target.value)}
             min={today}
-            className="w-full bg-white/10 border border-white/30 rounded px-3 py-2.5 text-white text-sm focus:outline-none focus:border-[var(--gold)] transition-colors [color-scheme:dark]"
+            className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-gray-800 text-sm focus:outline-none focus:border-[var(--accent)] focus:ring-1 focus:ring-[var(--accent)] transition-colors"
           />
         </div>
         <div>
-          <label className="block text-xs font-semibold uppercase tracking-wider mb-2">
-            Departure
+          <label className="block text-xs font-medium text-gray-500 mb-1.5">
+            Check-out
           </label>
           <input
             type="date"
             value={checkOut}
             onChange={(e) => setCheckOut(e.target.value)}
             min={checkIn}
-            className="w-full bg-white/10 border border-white/30 rounded px-3 py-2.5 text-white text-sm focus:outline-none focus:border-[var(--gold)] transition-colors [color-scheme:dark]"
+            className="w-full border border-gray-200 rounded-lg px-3 py-2.5 text-gray-800 text-sm focus:outline-none focus:border-[var(--accent)] focus:ring-1 focus:ring-[var(--accent)] transition-colors"
           />
         </div>
       </div>
 
       <button
         onClick={handleBook}
-        className="w-full bg-white text-[var(--primary)] font-bold py-3 rounded text-sm uppercase tracking-wider hover:bg-gray-100 transition-colors mb-4"
+        className="w-full bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-bold py-3 rounded-lg text-sm transition-colors mb-3"
       >
         Check and Book
       </button>
 
-      <p className="text-center text-sm font-semibold text-[var(--gold)]">
-        Best Rates on Trip.com
+      <p className="text-center text-xs text-gray-400">
+        Best rates on{" "}
+        <span className="font-semibold text-[var(--accent)]">Trip.com</span>
       </p>
     </div>
   );
