@@ -2,18 +2,18 @@ import BookingWidget from "@/components/BookingWidget";
 import Link from "next/link";
 import { TRIP_AFFILIATE_URL } from "@/lib/affiliate";
 
-// Photo grid images
+// Photo grid images - actual Lake Kawana Hotel / Mercure Sunshine Coast Kawana Waters
 const galleryImages = {
-  hero: "https://images.unsplash.com/photo-1540541338287-41700c73c306?w=1200&q=80",
+  hero: "/images/lake-aerial.jpg",
   topRight: [
-    "https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=600&q=80",
-    "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80",
-    "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80",
+    "/images/hotel-lakefront.jpg",
+    "/images/hotel-exterior.jpg",
+    "/images/room-king.jpg",
   ],
   bottomRight: [
-    "https://images.unsplash.com/photo-1566073771259-6a8506099945?w=600&q=80",
-    "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80",
-    "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80",
+    "/images/conference.jpg",
+    "/images/room-bedroom.jpg",
+    "/images/dining.jpg",
   ],
 };
 
@@ -79,19 +79,19 @@ const rooms = [
     name: "Standard Queen Room",
     desc: "Comfortable room with queen bed, work desk, and modern amenities. Perfect for business or leisure.",
     price: "From $149/night",
-    img: "https://images.unsplash.com/photo-1631049307264-da0ec9d70304?w=600&q=80",
+    img: "/images/room-bedroom.jpg",
   },
   {
     name: "Deluxe King Room",
     desc: "Spacious room with king bed, lounge area, and stunning lake views. Ideal for couples.",
     price: "From $179/night",
-    img: "https://images.unsplash.com/photo-1590490360182-c33d57733427?w=600&q=80",
+    img: "/images/room-king.jpg",
   },
   {
     name: "Family Suite",
     desc: "Two-bedroom suite with separate living area, kitchenette, and space for the whole family.",
     price: "From $249/night",
-    img: "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=600&q=80",
+    img: "/images/conference.jpg",
   },
 ];
 
