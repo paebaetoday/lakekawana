@@ -145,7 +145,7 @@ export default function DiningPage() {
             rel="noopener noreferrer"
             className="inline-block bg-[var(--gold)] hover:bg-[var(--gold-dark)] text-[var(--primary-dark)] font-bold px-10 py-4 rounded-lg text-lg uppercase tracking-wider transition-colors"
           >
-            Book Now on Trip.com
+            Book Your Stay
           </a>
         </div>
       </section>

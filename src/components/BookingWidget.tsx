@@ -58,8 +58,7 @@ export default function BookingWidget() {
       </button>
 
       <p className="text-center text-xs text-gray-400">
-        Best rates on{" "}
-        <span className="font-semibold text-[var(--accent)]">Trip.com</span>
+        Best price guarantee
       </p>
     </div>
   );

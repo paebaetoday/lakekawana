@@ -103,7 +103,7 @@ export default function ContactPage() {
               <div className="mt-10 p-6 bg-[var(--primary)] rounded-lg text-white">
                 <h3 className="text-xl font-bold mb-3">Book Direct for Best Rates</h3>
                 <p className="text-gray-200 text-sm mb-4">
-                  Get the best available rates when you book through our partner Trip.com.
+                  Get the best available rates when you book direct.
                 </p>
                 <a
                   href={TRIP_AFFILIATE_URL}
@@ -111,7 +111,7 @@ export default function ContactPage() {
                   rel="noopener noreferrer"
                   className="inline-block bg-[var(--gold)] hover:bg-[var(--gold-dark)] text-[var(--primary-dark)] font-bold px-8 py-3 rounded text-sm uppercase tracking-wider transition-colors"
                 >
-                  Book Now on Trip.com
+                  Book Now
                 </a>
               </div>
             </div>

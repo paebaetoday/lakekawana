@@ -358,7 +358,7 @@ export default function Home() {
             rel="noopener noreferrer"
             className="inline-block bg-white hover:bg-gray-50 text-[var(--accent)] font-bold px-10 py-4 rounded-lg text-lg transition-colors shadow-lg"
           >
-            Book Now on Trip.com
+            Book Your Stay
           </a>
         </div>
       </section>

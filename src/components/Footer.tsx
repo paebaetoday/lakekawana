@@ -84,17 +84,6 @@ export default function Footer() {
 
         <div className="border-t border-gray-800 mt-10 pt-8 text-center text-gray-500 text-xs">
           <p>&copy; {new Date().getFullYear()} Lake Kawana Hotel. All rights reserved.</p>
-          <p className="mt-1">
-            Accommodation bookings powered by{" "}
-            <a
-              href={TRIP_AFFILIATE_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-[var(--accent)] hover:underline"
-            >
-              Trip.com
-            </a>
-          </p>
         </div>
       </div>
     </footer>
