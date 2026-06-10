@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Location | Lake Kawana Hotel",
   description:
-    "Lake Kawana Hotel is located at 2 Birtinya Boulevard, Birtinya QLD 4575 on the Sunshine Coast. Near Sunshine Coast University Hospital, Mooloolaba Beach, and Australia Zoo.",
+    "Lake Kawana Hotel is located on Florey Blvd, Birtinya QLD 4575 on the Sunshine Coast. Near Sunshine Coast University Hospital, Mooloolaba Beach, and Australia Zoo.",
 };
 
 const nearby = [
@@ -49,7 +49,7 @@ export default function LocationPage() {
               <div className="bg-gray-50 rounded-lg p-6 mb-6">
                 <h3 className="font-bold text-[var(--primary)] mb-3">Address</h3>
                 <p className="text-gray-600">
-                  2 Birtinya Boulevard<br />
+                  Florey Blvd<br />
                   Birtinya, QLD 4575<br />
                   Sunshine Coast, Queensland<br />
                   Australia
@@ -88,7 +88,7 @@ export default function LocationPage() {
               {/* Google Maps Embed */}
               <div className="rounded-lg overflow-hidden shadow-lg mb-8">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.123!2d153.123622!3d-26.7418893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjbCsDQ0JzMwLjgiUyAxNTPCsDA3JzI1LjAiRQ!5e0!3m2!1sen!2sau!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.5!2d153.1167432!3d-26.7461032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b939e871ecfede3%3A0x93e4612e41cd1777!2sMercure%20Sunshine%20Coast%20Kawana%20Waters!5e0!3m2!1sen!2sau!4v1"
                   width="100%"
                   height="400"
                   style={{ border: 0 }}

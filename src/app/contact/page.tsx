@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Contact | Lake Kawana Hotel",
   description:
-    "Contact Lake Kawana Hotel for reservations and enquiries. Located at 2 Birtinya Boulevard, Birtinya QLD 4575 on the Sunshine Coast.",
+    "Contact Lake Kawana Hotel for reservations and enquiries. Located on Florey Blvd, Birtinya QLD 4575 on the Sunshine Coast.",
 };
 
 export default function ContactPage() {
@@ -48,25 +48,9 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-bold text-gray-800">Address</h3>
                     <p className="text-gray-600">
-                      2 Birtinya Boulevard<br />
+                      Florey Blvd<br />
                       Birtinya, QLD 4575<br />
                       Sunshine Coast, Australia
-                    </p>
-                  </div>
-                </div>
-
-                <div className="flex items-start space-x-4">
-                  <div className="w-12 h-12 bg-[var(--primary)] rounded-lg flex items-center justify-center flex-shrink-0">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-gray-800">Phone</h3>
-                    <p className="text-gray-600">
-                      <a href="tel:+61754938888" className="hover:text-[var(--primary)] transition-colors">
-                        +61 7 5493 8888
-                      </a>
                     </p>
                   </div>
                 </div>
@@ -100,7 +84,21 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="mt-10 p-6 bg-[var(--primary)] rounded-lg text-white">
+              {/* Map */}
+              <div className="mt-8 rounded-lg overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.5!2d153.1167432!3d-26.7461032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b939e871ecfede3%3A0x93e4612e41cd1777!2sMercure%20Sunshine%20Coast%20Kawana%20Waters!5e0!3m2!1sen!2sau!4v1"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Lake Kawana Hotel Location"
+                />
+              </div>
+
+              <div className="mt-8 p-6 bg-[var(--primary)] rounded-lg text-white">
                 <h3 className="text-xl font-bold mb-3">Book Direct for Best Rates</h3>
                 <p className="text-gray-200 text-sm mb-4">
                   Get the best available rates when you book direct.
@@ -109,7 +107,7 @@ export default function ContactPage() {
                   href={TRIP_AFFILIATE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-[var(--gold)] hover:bg-[var(--gold-dark)] text-[var(--primary-dark)] font-bold px-8 py-3 rounded text-sm uppercase tracking-wider transition-colors"
+                  className="inline-block bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-bold px-8 py-3 rounded-lg text-sm transition-colors"
                 >
                   Book Now
                 </a>
@@ -147,18 +145,6 @@ export default function ContactPage() {
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    name="phone"
-                    className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:border-[var(--primary)] focus:ring-1 focus:ring-[var(--primary)] transition-colors"
-                    placeholder="+61 4XX XXX XXX"
-                  />
-                </div>
-                <div>
                   <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
                     Subject
                   </label>
@@ -189,7 +175,7 @@ export default function ContactPage() {
                 </div>
                 <button
                   type="button"
-                  className="w-full bg-[var(--primary)] hover:bg-[var(--primary-dark)] text-white font-bold py-3 rounded-lg text-sm uppercase tracking-wider transition-colors"
+                  className="w-full bg-[var(--accent)] hover:bg-[var(--accent-dark)] text-white font-bold py-3 rounded-lg text-sm transition-colors"
                 >
                   Send Enquiry
                 </button>

@@ -52,14 +52,9 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li>9 Florey Blvd</li>
+              <li>Florey Blvd</li>
               <li>Birtinya, QLD 4575</li>
               <li>Sunshine Coast, Australia</li>
-              <li className="pt-2">
-                <a href="tel:+61754938888" className="hover:text-[var(--accent)] transition-colors">
-                  +61 7 5493 8888
-                </a>
-              </li>
             </ul>
           </div>
 
